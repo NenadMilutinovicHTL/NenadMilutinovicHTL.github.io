@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("img/lava.png");
+    background-repeat:repeat;
+    background-attachment: local;
+  }
+
+  .board {
+    display: flex; 
+    flex-wrap:wrap;
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    top: 27%;
+  }
+  
+  .board .card {
+    flex: 0 0 100px;
+    height: 100px;
+    border: 1px solid black;
+    z-index: 0;
+    
+    position: relative;
+  }
+  
+  
+  .board .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .board .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #942300;
+  }
+  
+  .board .card.show .cover {
+    opacity: 0;
+  }
